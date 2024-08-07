@@ -1,0 +1,30 @@
+.card-container{
+    width: 20%;
+    height: 20%;
+    border: 1px solid #ccc;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    }
+
+.card-container img{
+   width: 100%;
+   object-fit: cover;
+}
+.card-container:hover{
+    transform:scale(1.05);
+}
+.card-information{
+    position: absolute;
+    bottom:0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.card-container:hover .card-information{
+    opacity: 1;
+}
